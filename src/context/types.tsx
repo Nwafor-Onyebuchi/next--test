@@ -1,0 +1,45 @@
+export const GET_LOGGEDIN_USER = 'GET_LOGGEDIN_USER'
+export const GET_USER = 'GET_USER';
+export const GET_COUNTRIES = 'GET_COUNTRIES';
+export const GET_BANKS = 'GET_BANKS';
+export const GET_LOCATIONS = 'GET_LOCATIONS';
+export const GET_COUNTRY = 'GET_COUNTRY';
+export const GET_IP_ADDRESS = 'GET_IP_ADDRESS';
+
+export const GET_BLOG_CAMPAIGNS = 'GET_BLOG_CAMPAIGNS';
+export const GET_BLOG_CAMPAIGN = 'GET_BLOG_CAMPAIGN';
+export const GET_BLOG_SECTIONS = 'GET_BLOG_SECTIONS';
+export const GET_BLOG_SUBSCRIBERS = 'GET_BLOG_SUBSCRIBERS';
+export const GET_BLOG_SUBSCRIBER = 'GET_BLOG_SUBSCRIBER';
+export const GET_BLOG_BRACKETS = 'GET_BLOG_BRACKETS';
+export const GET_BLOG_BRACKET = 'GET_BLOG_BRACKET';
+export const GET_BLOG_CATEGORIES = 'GET_BLOG_CATEGORIES';
+export const GET_BLOG_CATEGORY = 'GET_BLOG_CATEGORY';
+export const GET_BLOG_TAGS = 'GET_BLOG_TAGS';
+export const GET_BLOG_TAG = 'GET_BLOG_TAG';
+export const GET_FORMATTED_TAGS = 'GET_FORMATTED_TAGS';
+export const GET_POST_COMMNENTS = 'GET_POST_COMMNENTS';
+export const GET_POST_COMMNENT = 'GET_POST_COMMNENT';
+export const GET_POSTS = 'GET_POSTS';
+export const GET_LATEST_POSTS = 'GET_LATEST_POSTS';
+export const GET_POST = 'GET_POST';
+export const GET_FILTERED_POSTS = 'GET_FILTERED_POSTS';
+export const GET_POST_TYPE = 'GET_POST_TYPE';
+export const GET_CAT_TYPE = 'GET_CAT_TYPE';
+export const GET_TAG_TYPE = 'GET_TAG_TYPE';
+export const GET_BLOG_OVERVIEW = 'GET_BLOG_OVERVIEW';
+export const GET_BLOG_GRAPH = 'GET_BLOG_GRAPH';
+
+// generics
+export const SET_PAGINATION = 'SET_PAGINATION';
+export const SET_TOTAL = 'SET_TOTAL';
+export const SET_COUNT = 'SET_COUNT';
+export const SET_LOADING = 'SET_LOADING';
+export const UNSET_LOADING = 'UNSET_LOADING';
+export const SET_USERTYPE = 'SET_USERTYPE';
+export const SET_RESPONSE = 'SET_RESPONSE';
+export const SET_IS_SUPER = 'SET_IS_SUPER';
+export const SET_IS_ADMIN = 'SET_IS_ADMIN';
+export const SET_SIDEBAR = 'SET_SIDEBAR';
+export const SET_SEED = 'SET_SEED';
+export const SET_COURSE_SEARCH = 'SET_COURSE_SEARCH';
