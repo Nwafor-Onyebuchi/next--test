@@ -41,8 +41,8 @@ class AppDocument extends Document {
                 <meta name="mobile-web-app-capable" content="yes" />
                 <meta name="HandheldFriendly" content="True" />
                 <meta name="MobileOptimized" content="320" />
-                <meta name="description" content="React-App" />
-                <meta name="Keywords" content="next-app react-app typescript" />
+                <meta name="description" content="Learn world-class, industry standard and professional Tech skills from novice to PRO" />
+                <meta name="Keywords" content="Concreap, concreap, EdTech, edtech, education, technology, software, software engineering, backend, backend development, frontend, design, frontend development, product design, product, web3, crypto, fintech, experience design, ui/ux, UI, UX, UI/UX, ui, ux" />
 
                 {/* bots tag */}
                 <meta name="robots" content="all" />
@@ -68,17 +68,17 @@ class AppDocument extends Document {
 
                 {/* t  */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@react-app" />
-                <meta name="twitter:creator" content="@react-app" />
-                <meta name="twitter:title" content="React-App" />
-                <meta name="twitter:description" content="React app" />
-                <meta name="twitter:image" content="" />
+                <meta name="twitter:site" content="@cocnreap" />
+                <meta name="twitter:creator" content="@cocnreap" />
+                <meta name="twitter:title" content="Concreap" />
+                <meta name="twitter:description" content="Learn world-class, industry standard and professional Tech skills from novice to PRO" />
+                <meta name="twitter:image" content="https://storage.googleapis.com/concreap-buckets/concreap-seo.jpg" />
 
                 {/* w */}
-                <meta property="og:site_name" content="React-App.co" />
-                <meta property="og:title" content="React-App" />
-                <meta property="og:description" content="React app" />
-                <meta property="og:image" itemProp="image" content="" />
+                <meta property="og:site_name" content="concreap.com" />
+                <meta property="og:title" content="Concreap" />
+                <meta property="og:description" content="Concreap" />
+                <meta property="og:image" itemProp="image" content="https://storage.googleapis.com/concreap-buckets/concreap-seo.jpg" />
                 <meta property="og:type" content="website" />
 
               </Head>

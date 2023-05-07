@@ -5,17 +5,17 @@ const SEO = ({ pageTitle, type, url, title, description, language, image, author
 
     const meta = {
         url: 'https://concreap.com',
-        title: 'Concreap - Learn world-class, industry standard and professional Tech skills from novice to PRO',
-        description: 'Building smart and great tech talents',
+        title: 'Concreap',
+        description: 'Learn world-class, industry standard and professional Tech skills from novice to PRO',
         language: "en-US",
         image: 'https://storage.googleapis.com/concreap-buckets/concreap-seo.jpg',
         author: {
             email: `hello@concreap.com`,
-            name: 'Concreap - Learn world-class, industry standard and professional Tech skills from novice to PRO',
+            name: 'Concreap',
             image:'https://storage.googleapis.com/concreap-buckets/concreap-seo.jpg'
         },
         site: {
-            siteName: 'Concreap - Learn world-class, industry standard and professional Tech skills from novice to PRO',
+            siteName: 'Concreap',
             searchUrl: 'https://www.google.com/search?q=concreap'
         },
         keywords: "Concreap, concreap, EdTech, edtech, education, technology, software, software engineering, backend, backend development, frontend, design, frontend development, product design, product, web3, crypto, fintech, experience design, ui/ux, UI, UX, UI/UX, ui, ux"
@@ -52,6 +52,19 @@ const SEO = ({ pageTitle, type, url, title, description, language, image, author
         
 
         return result;
+    }
+
+    const formatPlainTitle = (): string => {
+
+        let result: string = '';
+        if(type === 'main'){
+            result = title ? title : meta.title;
+        }else{
+            result = pageTitle ? pageTitle : meta.title
+        }
+
+        return result;
+
     }
 
 
@@ -95,14 +108,14 @@ const SEO = ({ pageTitle, type, url, title, description, language, image, author
                 <meta itemProp="image" content={ image ? image : meta.image  }></meta>
 
                 <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:site" content="@react-app" />
-                <meta name="twitter:creator" content="@react-app" />
-                <meta name="twitter:title" content="Next App - Typescript"/>
+                <meta name="twitter:site" content="@concreap" />
+                <meta name="twitter:creator" content="@concreap" />
+                <meta name="twitter:title" content={`${formatPlainTitle()}`}/>
                 <meta name="twitter:description" content={ description ? description : meta.description  }/>
                 <meta name="twitter:image" content={ image ? image : meta.image  }/>
 
                 <meta property="og:site_name" content={url ? url : meta.url} />
-                <meta property="og:title" content="Next App - Typescript"/>
+                <meta property="og:title" content={`${formatPlainTitle()}`}/>
                 <meta property="og:description" content={ description ? description : meta.description  }/>
                 <meta property="og:image" content={ image ? image : meta.image  }/>
                 <meta property="og:url" content={url ? url : meta.url} />
