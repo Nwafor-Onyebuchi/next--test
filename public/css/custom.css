@@ -961,7 +961,6 @@ form .icon-input input {
 
 .form .form-control:active,
 .form .form-control:focus {
-  background: transparent;
   border: 1px solid #3e397f;
 }
 
