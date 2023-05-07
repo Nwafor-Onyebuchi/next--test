@@ -8,6 +8,7 @@ import Cookies from 'universal-cookie';
 import { INavbarProps, IUserContext } from '../../utils/types'
 import UserContext from '@/context/user/userContext';
 import LaunchModal from '../app/auth/LaunchModal'
+import '../../helpers/jquery'
 
 const Navbar = ({ isFixed, backgroundColor, doScroll, display }: Partial<INavbarProps>) => {
 
