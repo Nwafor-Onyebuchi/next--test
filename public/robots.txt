@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+
+# Block all crawlers for /dashboard
+User-agent: *
+Disallow: /dashboard
+
+# Block all crawlers for /login
+User-agent: *
+Disallow: /login
+
+# Allow all crawlers
+User-agent: *
+Allow: /
