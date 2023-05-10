@@ -173,7 +173,7 @@ const NewPost: NextPage<any> = () => {
                 body: editorValue,
                 tags: post.tags,
                 categoryId: post.categoryId,
-                bracketId: post.bracketName,
+                bracketName: post.bracketName,
                 authorId: storage.getUserID(),
                 callback: post.callback,
                 cover: post.cover
