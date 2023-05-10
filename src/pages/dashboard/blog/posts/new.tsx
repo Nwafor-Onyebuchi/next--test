@@ -35,7 +35,7 @@ const NewPost: NextPage<any> = () => {
         headline: '',
         tags: [],
         categoryId: '',
-        bracketId: '',
+        bracketName: 'Article',
         callback: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
         cover: null,
         platform: ''
@@ -123,10 +123,10 @@ const NewPost: NextPage<any> = () => {
         setPreview(!preview)
     }
 
-    const changePostType = (e: any, id: string) => {
+    const changePostType = (e: any, name: string) => {
 
         if(e.target.checked){
-            setPost({ ...post, bracketId: id })
+            setPost({ ...post, bracketName: name })
         }
 
     }
@@ -148,7 +148,7 @@ const NewPost: NextPage<any> = () => {
 
         if(e) { e.preventDefault() }
 
-        if(!post.headline && !post.categoryId && !post.bracketId){
+        if(!post.headline && !post.categoryId && !post.bracketName){
             setToast({ ...toast, show: true, title: 'Fields Error', message: 'Supply required fields', type: 'error', position: 'top-right' })
             setTimeout(() => {
                 setToast({...toast, show: false })
@@ -173,7 +173,7 @@ const NewPost: NextPage<any> = () => {
                 body: editorValue,
                 tags: post.tags,
                 categoryId: post.categoryId,
-                bracketId: post.bracketId ? post.bracketId : bracket.name,
+                bracketId: post.bracketName,
                 authorId: storage.getUserID(),
                 callback: post.callback,
                 cover: post.cover
@@ -400,7 +400,7 @@ const NewPost: NextPage<any> = () => {
                                                                         blogContext.brackets.map((b, index) => 
                                                                             <>
                                                                                 <div className="custom-control custom-radio custom-control-inline">
-                                                                                    <input onChange={(e) => changePostType(e, b._id)} defaultChecked={index === 0 ? true : false} type="radio" id={`barti-${index+1}`} name="post-bracket" className="custom-control-input" />
+                                                                                    <input onChange={(e) => changePostType(e, b.name)} defaultChecked={index === 0 ? true : false} type="radio" id={`barti-${index+1}`} name="post-bracket" className="custom-control-input" />
                                                                                     <label className="custom-control-label font-frei fs-13" style={{ color: '#646195' }} htmlFor={`barti-${index+1}`}>{ body.captialize(b.name) }</label>
                                                                                 </div>
                                                                             </>
