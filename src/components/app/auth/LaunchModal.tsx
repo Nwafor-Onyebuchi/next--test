@@ -41,47 +41,7 @@ const WaitModal = ({ isShow, closeModal, modalTitle, flattened, stretch, slim }:
     const addToWaitList = async (e: any) => {
 
         if(e) { e.preventDefault() }
-
-        if(!reset.email){
-            setAlert({...alert, type: "danger", show:true, message:'Enter your email'})
-            setTimeout(()=> {
-                 setAlert({...alert, show:false});
-            }, 2500)
-        } else{
-
-            setLoading(true);
-
-            await Axios.post(`${process.env.REACT_APP_AUTH_URL}/waitlists`, { ...reset }, storage.getConfig())
-            .then(async (resp) => {
-
-                if(resp.data.error === false && resp.data.status === 200){
-                    setStep(1);
-                    setRm(true);
-                }
- 
-                setLoading(false);
-
-            }).catch((err) => {
-            
-                if(err.response.data.errors && err.response.data.errors.length > 0){
-
-                    setAlert({...alert, type: "danger", show:true, message:err.response.data.errors[0]})
-                    setTimeout(()=> {
-                        setAlert({...alert, show:false});
-                    }, 5000)
-
-                }else{
-                    setAlert({...alert, type: "danger", show:true, message:err.response.data.message})
-                    setTimeout(()=> {
-                        setAlert({...alert, show:false});
-                    }, 5000)
-                }
-
-                setLoading(false);
-            
-            });
-
-        }
+console.log('clicked')
     }
 
     return (
@@ -132,7 +92,7 @@ const WaitModal = ({ isShow, closeModal, modalTitle, flattened, stretch, slim }:
 
                                         <div className="mrgb1">
                                             <p className="font-frei fs-13 mrgb1 ui-line-height-medium" style={{ color: '#C3C2FB' }}>
-                                            Exceed the walls of traditional schools with an online education degree from Concreap. Learn world-class, industry standard professional skills from novice to PRO.
+                                            At Creon, we blend the power of AI tools with the dynamic crypto and NFT markets, utilizing an innovative business model to drive profitability.
                                             </p>
                                         </div>
 
@@ -162,15 +122,15 @@ const WaitModal = ({ isShow, closeModal, modalTitle, flattened, stretch, slim }:
                                         </div>
                                         <div className='form-row mrgb1'>
 
-                                            <div className="col">
+                                            <div className="col" aria-disabled>
 
                                                 <Link onClick={(e) => addToWaitList(e)} style={{  top:'-2px' }} className={`w-100 onwhite md fs-11 btn bgd-yellow ui-relative ${loading ? 'disabled-lt' : ''}`} href="">
-                                                   { loading ? <span className='cp-loader sm white'></span>  :
-                                                    <>
+                                                  
+                                                   
                                                          <span className='font-freibold fs-13'>Join The Waitlist</span>
                                                         <span className='fe fe-chevrons-right fs-15 onwhite ui-relative' style={{ top: '2px', left: '5px' }}></span>
-                                                    </>
-                                                   }
+                                                  
+                                                   
                                                 </Link>
 
                                             </div>

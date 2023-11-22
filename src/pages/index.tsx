@@ -30,7 +30,7 @@ const Home: NextPage<any> = ({}: any) => {
 
       <Navbar isFixed={true} />
 
-      <section className='hero hero-home ui-full-bg-norm bg-brand-black ui-relative' style={{ backgroundImage: `url("../../../images/assets/bg@hero-home.jpg")` }}>
+      <section className='hero hero-home ui-full-bg-norm bg-brand-black ui-relative' style={{ backgroundImage: `url("../../../images/assets/bg--lg.png")` }}>
 
           <div className='container'>
 
@@ -38,21 +38,16 @@ const Home: NextPage<any> = ({}: any) => {
 
                   <div className='row hero-row justify-content-md-center justify-content-lg-start justify-content-start wp-100'>
 
-                      <div className='col-md-5 col-lg-5 col-12'>
+                      <div className='col-md-5 col-lg-7 col-12'>
 
-                          <h1 className='font-clashsemibold mrgb ui-line-height mrgt2'>
-                              <span className='onwhite fs-74'>Building</span>
-                              <span className='brand-blue fs-74'> smart</span>
-                              <span className='onwhite fs-74'>, great talents</span>
+                          <h1 className='font-clashsemibold mrgb ui-line-height mrgt2 hero-header'>
+                          The world's first <br />
+                            platform for Tokenizing <br /> AI blockchain projects
                           </h1>
-
-                          <p className='mrgb0 font-freimedium fs-17 onwhite ui-line-height-large'>
-                              Conreap takes a non-traditional approach in building smart and innovative tech talents. Learn world-class, industry standard professional skills from novice to PRO.
-                          </p>
 
                           <div className='ui-group-button home mrgt4'>
 
-                              <Link onClick={(e) => toggleShow(e)} className="btn lg stretch bgd-yellow btn-full" href="">
+                             {/* <Link onClick={(e) => toggleShow(e)} className="btn lg stretch bgd-yellow btn-full" href="">
                                   <span className="onwhite font-freibold onwhite fs-15 pdr">Join The Waitlist</span>
                                   <span className="fe fe-chevrons-right onwhite ui-relative fs-19" style={{ top: '0.21rem' }}></span>
                               </Link>
@@ -60,7 +55,7 @@ const Home: NextPage<any> = ({}: any) => {
                               <Link className="" href="/blog">
                                   <span className="onwhite font-freibold onwhite fs-15 pdr">Our Thoughts</span>
                                   <span className='link-round smd bgd-disable onwhite ui-relative' style={{ top: '2px' }}><i className='fe fe-chevron-right'></i></span>
-                              </Link>
+                              </Link>  */}
 
                           </div>
 

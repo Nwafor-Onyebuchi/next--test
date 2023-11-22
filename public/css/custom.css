@@ -284,6 +284,13 @@ a:active,
   background-clip: padding-box !important;
 }
 
+.hero-header {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .brand-blue,
 .brand-blue span {
   color: #03BBFF !important
@@ -2298,6 +2305,12 @@ td.con-badge {
 
 .post-form{
   width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .post-form .post-title{

@@ -25,19 +25,11 @@ const Footer = ({ bgColor, className }: Partial<IFooterProps>) => {
 
             <footer id="footer" className={`footer bg-brand-black ${className && className}`}>
 
-                <div className='ui-wrapper-large bg-brand-bluedark'>
+                <div className=' bg-brand-bluedark'>
 
                     <div className='container'>
 
                         <div className='row'>
-
-                            <div className='col-md-3'>
-
-                                <Link href="/" className='footer-logo ui-relative ui-hide-mobile-only' style={{ top: '-8px' }}>
-                                    <img src="../../../images/assets/logo-white.svg" alt="brand-logo" />
-                                </Link>
-
-                            </div>
 
                             <div className='col-md-9'>
 
@@ -47,77 +39,35 @@ const Footer = ({ bgColor, className }: Partial<IFooterProps>) => {
 
                                         <div className='row'>
 
-                                            <div className='col-md-3 col-6'>
-                                                <div className=' mt-md-0 mt-5'>
+                                            
 
-                                                    <h4 className='onwhite fs-16 font-clashsemibold mrgb0'>Company</h4>
-                                                    <ul className='ui-list block mrgt3'>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>About</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>Diversity + Inclusion</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>Careers</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>Privacy Policy</Link></li>
-                                                    </ul>
-                                                </div>
+                                            
 
+                                            
 
-                                            </div>
+                                            <div className=''>
 
-                                            <div className='col-md-3 col-6'>
-                                                <div className=' mt-md-0 mt-5'>
+                                      
 
-                                                    <h4 className='onwhite fs-16 font-clashsemibold mrgb0'>Resources</h4>
-                                                    <ul className='ui-list block mrgt3'>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>Courses</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>Blog</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>Tutorials</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>Podcast</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>FAQs</Link></li>
-                                                    </ul>
-                                                </div>
+                                                <div className=' mt-md-0 mt-5 footer-content'>
 
+                
+                                                    <div className='col-md-6 ui-text-center mx-auto'>
 
-                                            </div>
+                                                        <span className='font-frei fs-14' style={{ color: '#938FBD' }}>
+                                                        © Creon {cDate.getFullYear()}. All rights reserved.
+                                                        </span>
 
-                                            <div className='col-md-3 col-6'>
-                                                <div className=' mt-md-0 mt-5'>
-
-                                                    <h4 className='onwhite fs-16 font-clashsemibold mrgb0'>Products</h4>
-                                                    <ul className='ui-list block mrgt3'>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>For Schools</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>For Startups</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>For Businesses</Link></li>
-                                                        <li><Link onClick={(e) => toggleShow(e)} href="" className='font-frei fs-14 onwhite'>For Educators</Link></li>
-                                                    </ul>
-
-                                                </div>
-
-                                            </div>
-
-                                            <div className='col-md-3 col-6'>
-
-                                                <div className='pdr3 mt-md-0 mt-5'>
-
-                                                    <h4 className='onwhite fs-16 font-clashsemibold mrgb0'>Contact</h4>
-
+                                                    </div>
                                                     <ul className="social_media ui-list inline mrgt3 mrgb2">
-                                                        <li className="onwhite"><a href="https://twitter.com/concreap" target="_blank" className="fb link-underlined bg-btgradient onwhite hover"><i className="fab fa-twitter onwhite fs-15" aria-hidden="true"></i></a></li>
-                                                        <li className="onwhite"><a href="https://www.instagram.com/concreap/" target="_blank" className="ig link-underlined hover onwhite bg-pgradient"><i className="fab fa-instagram onwhite fs-15" aria-hidden="true"></i></a></li>
-                                                        <li className="onwhite"><a href="https://www.linkedin.com/company/concreap/" target="_blank" className="lkd link-underlined bg-bfgradient onwhite hover"><i className="fab fa-linkedin onwhite fs-15" aria-hidden="true"></i></a></li>
+                                                    <li className="onwhite"><a href="#" target="_blank" className="lkd link-underlined bg-bfgradient onwhite hover"><i className="fab fa-telegram onwhite fs-15" aria-hidden="true"></i></a></li>
+                                                        <li className="onwhite"><a href="#" target="_blank" className="ig link-underlined hover onwhite bg-pgradient"><i className="fab fa-discord onwhite fs-15" aria-hidden="true"></i></a></li>
+                                                        <li className="onwhite"><a href="#" target="_blank" className="fb link-underlined bg-btgradient onwhite hover"><i className="fab fa-twitter onwhite fs-15" aria-hidden="true"></i></a></li>
                                                     </ul>
 
-                                                    <div>
-                                                        <a href='mailto:hello@concreap.com' className='fs-14'>
-                                                            <span className='fe fe-mail fs-14 onwhite ui-relative' style={{ top: '1px' }}></span>
-                                                            <span className='font-frei fs-14 onwhite pdl'>hello@concreap.com</span>
-                                                        </a>
-                                                    </div>
+                                                
 
-                                                    <div>
-                                                        <a href='tel:+2348137031202' className='fs-14'>
-                                                            <span className='fe fe-phone fs-14 onwhite ui-relative' style={{ top: '1px' }}></span>
-                                                            <span className='font-frei fs-14 onwhite pdl'>+2348137031202</span>
-                                                        </a>
-                                                    </div>
+                                                   
 
                                                 </div>
 
@@ -139,21 +89,7 @@ const Footer = ({ bgColor, className }: Partial<IFooterProps>) => {
 
                 </div>
 
-                <div className='copyright ui-wrapper-medium'>
-
-                    <div className='row'>
-
-                        <div className='col-md-6 ui-text-center mx-auto'>
-
-                            <span className='font-frei fs-14' style={{ color: '#938FBD' }}>
-                                Copyright @ {cDate.getFullYear()}, Concreap Technologies.  All rights reserverd.
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                
 
             </footer>
 
