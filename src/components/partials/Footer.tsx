@@ -60,9 +60,9 @@ const Footer = ({ bgColor, className }: Partial<IFooterProps>) => {
 
                                                     </div>
                                                     <ul className="social_media ui-list inline mrgt3 mrgb2">
-                                                    <li className="onwhite"><a href="#" target="_blank" className="lkd link-underlined bg-bfgradient onwhite hover"><i className="fab fa-telegram onwhite fs-15" aria-hidden="true"></i></a></li>
-                                                        <li className="onwhite"><a href="#" target="_blank" className="ig link-underlined hover onwhite bg-pgradient"><i className="fab fa-discord onwhite fs-15" aria-hidden="true"></i></a></li>
-                                                        <li className="onwhite"><a href="#" target="_blank" className="fb link-underlined bg-btgradient onwhite hover"><i className="fab fa-twitter onwhite fs-15" aria-hidden="true"></i></a></li>
+                                                    <li className="onwhite"><a href="#"  className="lkd link-underlined bg-bfgradient onwhite hover"><i className="fab fa-telegram onwhite fs-15" aria-hidden="true"></i></a></li>
+                                                        <li className="onwhite"><a href="#"  className="ig link-underlined hover onwhite bg-pgradient"><i className="fab fa-discord onwhite fs-15" aria-hidden="true"></i></a></li>
+                                                        <li className="onwhite"><a href="#" className="fb link-underlined bg-btgradient onwhite hover"><i className="fab fa-twitter onwhite fs-15" aria-hidden="true"></i></a></li>
                                                     </ul>
 
                                                 
