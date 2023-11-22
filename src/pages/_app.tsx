@@ -37,11 +37,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <UserState>
 
-        <BlogState>
 
-          <ResourceState>
+ 
+
+         
 
             <Suspense fallback={loader.MainLoader()}>
 
@@ -54,11 +54,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
             </Suspense>
             
-          </ResourceState>
+         
 
-        </BlogState>
+       
 
-      </UserState>
+
     </>
   )
 }

@@ -5,21 +5,18 @@ const SEO = ({ pageTitle, type, url, title, description, language, image, author
 
     const meta = {
         url: 'https://concreap.com',
-        title: 'Concreap',
-        description: 'Learn world-class, industry standard and professional Tech skills from novice to PRO',
+        title: 'Creon',
+        description: 'Blending the power of AI tools with the dynamic crypto and NFT markets',
         language: "en-US",
-        image: 'https://storage.googleapis.com/concreap-buckets/concreap-seo.jpg',
         author: {
-            email: `hello@concreap.com`,
-            name: 'Concreap',
-            image:'https://storage.googleapis.com/concreap-buckets/concreap-seo.jpg'
+            email: `buchi@creon.com`,
+            name: 'Creon',
         },
         site: {
             siteName: 'Concreap',
-            searchUrl: 'https://www.google.com/search?q=concreap'
+            searchUrl: 'https://www.google.com/search?q=creon'
         },
-        keywords: "Concreap, concreap, EdTech, edtech, education, technology, software, software engineering, backend, backend development, frontend, design, frontend development, product design, product, web3, crypto, fintech, experience design, ui/ux, UI, UX, UI/UX, ui, ux"
-    }
+        keywords: "Creon, creon, AI, crypto, NFT, technology, software,"}
 
     useEffect(() => {
 
@@ -105,19 +102,19 @@ const SEO = ({ pageTitle, type, url, title, description, language, image, author
                 <meta name="google" content="notranslate" key="notranslate" />
 
                 <meta itemProp="description" content={ description ? description : meta.description}></meta>
-                <meta itemProp="image" content={ image ? image : meta.image  }></meta>
+                {/* <meta itemProp="image" content={ image ? image : meta.image  }></meta> */}
 
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:site" content="@concreap" />
                 <meta name="twitter:creator" content="@concreap" />
                 <meta name="twitter:title" content={`${formatPlainTitle()}`}/>
                 <meta name="twitter:description" content={ description ? description : meta.description  }/>
-                <meta name="twitter:image" content={ image ? image : meta.image  }/>
+                {/* <meta name="twitter:image" content={ image ? image : meta.image  }/> */}
 
                 <meta property="og:site_name" content={url ? url : meta.url} />
                 <meta property="og:title" content={`${formatPlainTitle()}`}/>
                 <meta property="og:description" content={ description ? description : meta.description  }/>
-                <meta property="og:image" content={ image ? image : meta.image  }/>
+                {/* <meta property="og:image" content={ image ? image : meta.image  }/> */}
                 <meta property="og:url" content={url ? url : meta.url} />
 
             </Head>
