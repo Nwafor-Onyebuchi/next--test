@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react'
-import Lottie from 'react-lottie';
+
 import { ILottieProps } from '../../utils/types';
 
 import checkData from '../../_data/check-data-green.json'
