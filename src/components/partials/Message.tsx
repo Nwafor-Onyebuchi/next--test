@@ -6,7 +6,6 @@ import { IMessageCompProps } from '../../utils/types'
 import lottieSuccess from '../../_data/dark-check.json'
 import lottieError from '../../_data/check-error.json'
 
-import LottiePlayer from './LottiePlayer'
 
 const MessageComp = ({
     title, 
